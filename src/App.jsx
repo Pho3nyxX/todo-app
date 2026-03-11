@@ -14,7 +14,7 @@ function App() {
 
       <TodoForm setTodos={setTodos} />
       {/* <Filter filter={filter} setFilter={setFilter} /> */}
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos}/>
     </div>
   )
 }
