@@ -28,7 +28,7 @@ function TodoForm({ setTodos }) {
                 onChange={(e) => setTask(e.target.value)}
             />
 
-            <button type="submit" className="addBtn">+</button>
+            <button type="submit" className="add btn">+</button>
         </form>
     )
 }
