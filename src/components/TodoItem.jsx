@@ -8,6 +8,14 @@ function TodoItem({ todo, setTodos }) {
         setTodos((prev) => prev.filter((item) => item.id !== todo.id));
     }
 
+    const toggleComplete = () => {
+        setTodos((prev) =>
+            prev.map((item) =>
+                item.id === todo.id ? { ...item, completed: !item.completed } : item
+            )
+        );
+    };
+
     const saveEdit = () => {
         if (!editedText.trim()) return;
 
@@ -45,12 +53,17 @@ function TodoItem({ todo, setTodos }) {
                 </>
             ) : (
                 <>
-                    <span
-                        // onClick={toggleComplete}
-                        // className={todo.completed ? "completed" : ""}
-                    >
-                        {todo.text}
-                    </span>
+                    <div className="todoContent">
+                        <input
+                            type="checkbox"
+                            checked={todo.completed}
+                            onChange={toggleComplete}
+                        />
+
+                        <span className={todo.completed ? "completed" : ""}>
+                            {todo.text}
+                        </span>
+                    </div>
 
                     <div className="actonBtns">
                         <button

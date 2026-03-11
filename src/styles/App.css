@@ -70,6 +70,8 @@ body {
         }
 
         ul {
+            list-style: none;
+            padding-left: 0;
 
             li {
                 display: flex;
@@ -77,10 +79,16 @@ body {
                 align-items: center;
                 margin-bottom: 10px;
 
+                .todoContent {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+
                 .actonBtns {
                     display: flex;
                     justify-content: space-between;
-                    width: 20%;
+                    gap: 8px;
 
                     .edit {
                         font-size: 14px;
