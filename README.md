@@ -1,16 +1,41 @@
-# React + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React Todo List application to manage daily tasks. This app allows users to add, edit, delete, complete, and filter tasks, with data persisted in localStorage.
 
-Currently, two official plugins are available:
+![Todo App](./src/assets/all.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Add Tasks** – Quickly add new tasks to your list.
+- **Edit Tasks** – Update task text inline.
+- **Delete Tasks** – Remove tasks from the list.
+- **Mark Complete** – Click on a task to toggle completion.
+- **Filter Tasks** – View all tasks, completed tasks, or active tasks.
+- **Persistent Storage** – Tasks are saved in localStorage and persist across page reloads.
 
-## Expanding the ESLint configuration
+--- 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+**1. Clone the repository:**
+```bash
+git clone <repo-url>
+```
+**2. Navigate into the project folder:**
+```bash
+cd todo-app
+```
+**3. Install dependencies:**
+```bash
+npm install
+```
+**4. Start development server:**
+```bash
+npm start
+```
+or
+```bash
+npm run dev
+```
