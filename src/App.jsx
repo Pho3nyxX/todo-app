@@ -6,15 +6,6 @@ import useLocalStorage from "./hooks/useLocalStorage";
 import "./styles/App.css";
 
 function App() {
-  // const [todos, setTodos] = useState(() => {
-  //   try {
-  //     const saved = localStorage.getItem("todos");
-  //     return saved ? JSON.parse(saved) : [];
-  //   } catch {
-  //     return [];
-  //   }
-  // });
-
   const [todos, setTodos] = useLocalStorage("todos", []);
   const [filter, setFilter] = useState("all");
 
@@ -23,10 +14,6 @@ function App() {
     if (filter === "active") return !todo.completed;
     return true;
   });
-
-  // useEffect(() => {
-  //   localStorage.setItem("todos", JSON.stringify(todos));
-  // }, [todos]);
 
   return (
     <div className='app'>
