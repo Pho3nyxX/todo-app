@@ -8,8 +8,8 @@ A simple React Todo List application to manage daily tasks. This app allows user
 
 ## Features
 
-- **Add Tasks** – Quickly add new tasks to your list.
-- **Edit Tasks** – Update task text inline.
+- **Add Tasks** – Add new tasks to list.
+- **Edit Tasks** – Update task.
 - **Delete Tasks** – Remove tasks from the list.
 - **Mark Complete** – Click on a task to toggle completion.
 - **Filter Tasks** – View all tasks, completed tasks, or active tasks.
