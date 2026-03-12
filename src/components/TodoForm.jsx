@@ -1,4 +1,5 @@
 import { useState } from "react";
+import generateId from "../utils/generateId";
 
 function TodoForm({ setTodos }) {
     const [task, setTask] = useState("");
@@ -10,12 +11,8 @@ function TodoForm({ setTodos }) {
 
         setTodos((prev) => [
             ...prev,
-            {
-                id: Date.now(),
-                text: task,
-                completed: false,
-            }
-        ])
+            { id: generateId(), text: task, completed: false },
+        ]);
 
         setTask("");
     }
