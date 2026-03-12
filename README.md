@@ -2,7 +2,7 @@
 
 A simple React Todo List application to manage daily tasks. This app allows users to add, edit, delete, complete, and filter tasks, with data persisted in localStorage.
 
-![Todo App](./src/assets/all.png)
+<img src="./src/assets/all.png" alt="Todo App" width="200" height="200" />
 
 ---
 
